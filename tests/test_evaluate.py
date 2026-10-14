@@ -4,6 +4,9 @@ from evallab.evaluate import (
     evaluate_dataset,
     load_dataset,
     run_evaluation,
+    diagnose_retrieval,
+    precision_at_k,
+    reciprocal_rank,
 )
 
 
@@ -90,3 +93,31 @@ def test_runner_writes_json_report(tmp_path):
     )
 
     assert saved_report == report
+
+
+def test_precision_at_k_penalizes_irrelevant_results():
+    retrieved = ["paper001/p001", "paper002/p001"]
+    relevant = {"paper002/p001"}
+
+    assert precision_at_k(retrieved, relevant, k=2) == 0.5
+
+
+def test_reciprocal_rank_rewards_higher_ranked_evidence():
+    retrieved = ["paper001/p001", "paper002/p001"]
+    relevant = {"paper002/p001"}
+
+    assert reciprocal_rank(retrieved, relevant) == 0.5
+
+
+def test_retrieval_diagnosis_identifies_irrelevant_passages():
+    retrieved = ["paper001/p001", "paper002/p001"]
+    relevant = {"paper002/p001"}
+
+    diagnosis = diagnose_retrieval(retrieved, relevant)
+
+    assert "irrelevant_passages_retrieved" in diagnosis
+    assert "retrieval_complete_and_clean" not in diagnosis
+
+
+def test_reciprocal_rank_is_undefined_without_relevant_passages():
+    assert reciprocal_rank(["paper001/p001"], set()) is None

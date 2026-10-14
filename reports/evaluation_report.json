@@ -2,6 +2,8 @@
   "dataset_size": 4,
   "metrics": {
     "retrieval_recall_at_2": 1.0,
+    "mean_precision_at_2": 0.6666666666666666,
+    "mean_reciprocal_rank": 1.0,
     "abstention_accuracy": 1.0
   },
   "results": [
@@ -16,6 +18,11 @@
         "paper001/p002"
       ],
       "recall_at_2": 1.0,
+      "precision_at_2": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieval_diagnosis": [
+        "retrieval_complete_and_clean"
+      ],
       "should_abstain": false,
       "actually_abstained": false,
       "abstention_correct": true
@@ -23,13 +30,18 @@
     {
       "question_id": "eval002",
       "retrieved_passage_ids": [
-        "paper001/p001",
-        "paper002/p001"
+        "paper002/p001",
+        "paper001/p001"
       ],
       "relevant_passage_ids": [
         "paper002/p001"
       ],
       "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieval_diagnosis": [
+        "irrelevant_passages_retrieved"
+      ],
       "should_abstain": false,
       "actually_abstained": false,
       "abstention_correct": true
@@ -39,6 +51,11 @@
       "retrieved_passage_ids": [],
       "relevant_passage_ids": [],
       "recall_at_2": null,
+      "precision_at_2": null,
+      "reciprocal_rank": null,
+      "retrieval_diagnosis": [
+        "no_relevant_passages_expected"
+      ],
       "should_abstain": true,
       "actually_abstained": true,
       "abstention_correct": true
@@ -46,13 +63,18 @@
     {
       "question_id": "eval004",
       "retrieved_passage_ids": [
-        "paper001/p001",
-        "paper001/p002"
+        "paper001/p002",
+        "paper001/p001"
       ],
       "relevant_passage_ids": [
         "paper001/p002"
       ],
       "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieval_diagnosis": [
+        "irrelevant_passages_retrieved"
+      ],
       "should_abstain": false,
       "actually_abstained": false,
       "abstention_correct": true
