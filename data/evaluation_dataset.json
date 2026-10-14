@@ -1,0 +1,33 @@
+[
+  {
+    "question_id": "eval001",
+    "question": "How does RAG use external evidence?",
+    "relevant_passage_ids": [
+      "paper001/p001",
+      "paper001/p002"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question_id": "eval002",
+    "question": "How does dense retrieval use vectors to rank documents?",
+    "relevant_passage_ids": [
+      "paper002/p001"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question_id": "eval003",
+    "question": "What is the history of ancient Roman architecture?",
+    "relevant_passage_ids": [],
+    "should_abstain": true
+  },
+  {
+    "question_id": "eval004",
+    "question": "What affects the quality of generated answers in RAG?",
+    "relevant_passage_ids": [
+      "paper001/p002"
+    ],
+    "should_abstain": false
+  }
+]

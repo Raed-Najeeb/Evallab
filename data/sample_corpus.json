@@ -1,0 +1,17 @@
+[
+  {
+    "document_id": "paper001",
+    "passage_id": "p001",
+    "text": "Retrieval-augmented generation (RAG) combines a language model with a retrieval system. The retrieval system finds relevant external passages, which are provided to the language model as additional context."
+  },
+  {
+    "document_id": "paper001",
+    "passage_id": "p002",
+    "text": "RAG can provide access to information that is not stored in the language model parameters. The quality of retrieved evidence can influence the quality of generated answers."
+  },
+  {
+    "document_id": "paper002",
+    "passage_id": "p001",
+    "text": "Dense retrieval represents queries and documents as numerical vectors. Similarity between these vectors can be used to rank candidate documents."
+  }
+]

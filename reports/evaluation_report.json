@@ -1,0 +1,61 @@
+{
+  "dataset_size": 4,
+  "metrics": {
+    "retrieval_recall_at_2": 1.0,
+    "abstention_accuracy": 1.0
+  },
+  "results": [
+    {
+      "question_id": "eval001",
+      "retrieved_passage_ids": [
+        "paper001/p001",
+        "paper001/p002"
+      ],
+      "relevant_passage_ids": [
+        "paper001/p001",
+        "paper001/p002"
+      ],
+      "recall_at_2": 1.0,
+      "should_abstain": false,
+      "actually_abstained": false,
+      "abstention_correct": true
+    },
+    {
+      "question_id": "eval002",
+      "retrieved_passage_ids": [
+        "paper001/p001",
+        "paper002/p001"
+      ],
+      "relevant_passage_ids": [
+        "paper002/p001"
+      ],
+      "recall_at_2": 1.0,
+      "should_abstain": false,
+      "actually_abstained": false,
+      "abstention_correct": true
+    },
+    {
+      "question_id": "eval003",
+      "retrieved_passage_ids": [],
+      "relevant_passage_ids": [],
+      "recall_at_2": null,
+      "should_abstain": true,
+      "actually_abstained": true,
+      "abstention_correct": true
+    },
+    {
+      "question_id": "eval004",
+      "retrieved_passage_ids": [
+        "paper001/p001",
+        "paper001/p002"
+      ],
+      "relevant_passage_ids": [
+        "paper001/p002"
+      ],
+      "recall_at_2": 1.0,
+      "should_abstain": false,
+      "actually_abstained": false,
+      "abstention_correct": true
+    }
+  ]
+}
