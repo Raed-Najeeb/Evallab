@@ -1,0 +1,19 @@
+
+[
+  {
+    "passage_id": "doc1/p1",
+    "text": "Dense retrieval represents queries and documents as vectors in an embedding space. It retrieves relevant documents by comparing vector similarity."
+  },
+  {
+    "passage_id": "doc1/p2",
+    "text": "Retrieval-augmented generation (RAG) retrieves external documents and supplies their content to a language model to help it generate evidence-based answers."
+  },
+  {
+    "passage_id": "doc2/p1",
+    "text": "A ranking metric evaluates the order in which a retrieval system places relevant documents. Mean Reciprocal Rank rewards systems that rank the first relevant result highly."
+  },
+  {
+    "passage_id": "doc3/p1",
+    "text": "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce sugars and release oxygen."
+  }
+]

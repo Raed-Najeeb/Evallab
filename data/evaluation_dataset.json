@@ -1,0 +1,27 @@
+
+[
+  {
+    "question_id": "eval001",
+    "question": "How does dense retrieval represent documents?",
+    "relevant_passage_ids": ["doc1/p1"],
+    "should_abstain": false
+  },
+  {
+    "question_id": "eval002",
+    "question": "What does RAG use external documents for?",
+    "relevant_passage_ids": ["doc1/p2"],
+    "should_abstain": false
+  },
+  {
+    "question_id": "eval003",
+    "question": "What is Mean Reciprocal Rank?",
+    "relevant_passage_ids": ["doc2/p1"],
+    "should_abstain": false
+  },
+  {
+    "question_id": "eval004",
+    "question": "How do black holes evaporate?",
+    "relevant_passage_ids": [],
+    "should_abstain": true
+  }
+]
