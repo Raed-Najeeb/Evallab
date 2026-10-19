@@ -1,0 +1,70 @@
+{
+  "dataset_size": 4,
+  "metrics": {
+    "mean_recall_at_2": 0.75,
+    "mean_precision_at_2": 0.375,
+    "mean_reciprocal_rank": 0.75,
+    "abstention_accuracy": 1.0
+  },
+  "results": [
+    {
+      "question_id": "eval001",
+      "retrieved_passage_ids": [
+        "doc1/p1",
+        "doc2/p1"
+      ],
+      "relevant_passage_ids": [
+        "doc1/p1"
+      ],
+      "abstained": false,
+      "should_abstain": false,
+      "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "reciprocal_rank": 1.0,
+      "abstention_correct": 1.0
+    },
+    {
+      "question_id": "eval002",
+      "retrieved_passage_ids": [
+        "doc1/p2",
+        "doc1/p1"
+      ],
+      "relevant_passage_ids": [
+        "doc1/p2"
+      ],
+      "abstained": false,
+      "should_abstain": false,
+      "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "reciprocal_rank": 1.0,
+      "abstention_correct": 1.0
+    },
+    {
+      "question_id": "eval003",
+      "retrieved_passage_ids": [
+        "doc2/p1",
+        "doc3/p1"
+      ],
+      "relevant_passage_ids": [
+        "doc2/p1"
+      ],
+      "abstained": false,
+      "should_abstain": false,
+      "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "reciprocal_rank": 1.0,
+      "abstention_correct": 1.0
+    },
+    {
+      "question_id": "eval004",
+      "retrieved_passage_ids": [],
+      "relevant_passage_ids": [],
+      "abstained": true,
+      "should_abstain": true,
+      "recall_at_2": 0.0,
+      "precision_at_2": 0.0,
+      "reciprocal_rank": 0.0,
+      "abstention_correct": 1.0
+    }
+  ]
+}
